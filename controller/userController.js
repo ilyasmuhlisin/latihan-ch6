@@ -6,10 +6,6 @@ module.exports = class {
   static addUser(req, res, next) {
     User.create(
       req.body
-      // name: req.body.name,
-      // class: req.body.class,
-      // age: req.body.age,
-      // GroupId: req.body.GroupId,
     )
       .then((result) => {
         console.log(result);
